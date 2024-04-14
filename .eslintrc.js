@@ -51,7 +51,7 @@ module.exports = {
 
       'linebreak-style': ['error', 'unix'],
       quotes: ['error', 'single'],
-      semi: ['error', 'always'],
+    //   semi: ['error', 'always'],
 
       'comma-dangle': ['error', 'never'],
       'no-cond-assign': ['error', 'always'],
@@ -61,7 +61,6 @@ module.exports = {
 
       'no-bitwise': 0,
       'no-alert': 0,
-      eqeqeq: 'error',
 
       'prefer-destructuring': ['error', { object: false, array: false }],
 

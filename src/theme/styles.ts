@@ -81,51 +81,51 @@ export const Styles = {
 
 export const HtmlStyles = {
   a: {
-    ...Styles.typography.regular,
+    // ...Styles.typography.regular,
     color: COLORS.BLACK,
     fontSize: Configs.FontSize.size13,
     textAlign: 'center',
   },
   b: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.BLACK,
     fontSize: Configs.FontSize.size13,
     textAlign: 'center',
   },
   w: {
-    ...Styles.typography.regular,
+    // ...Styles.typography.regular,
     color: COLORS.WHITE,
     fontSize: Configs.FontSize.size13,
     textAlign: 'center',
   },
   g: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.GREEN,
     fontSize: Configs.FontSize.size12,
   },
   r: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.RED,
     fontSize: Configs.FontSize.size13,
     marginTop: 5,
   },
   s: {
-    ...Styles.typography.regular,
+    // ...Styles.typography.regular,
     fontSize: Configs.FontSize.size12,
     padding: 15,
   },
   t: {
-    ...Styles.typography.regular,
+    // ...Styles.typography.regular,
     fontSize: Configs.FontSize.size12,
     textAlign: 'center',
   },
   m: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     fontSize: Configs.FontSize.size12,
     color: COLORS.DARK_GRAY,
   },
   p: {
-    ...Styles.typography.regular,
+    // ...Styles.typography.regular,
     color: COLORS.RED,
     fontSize: Configs.FontSize.size13,
   },
@@ -133,25 +133,25 @@ export const HtmlStyles = {
 
 export const HtmlStylesSeen = {
   w: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.GRAY_2,
     fontSize: Configs.FontSize.size14,
     marginTop: 5,
   },
   b: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.GRAY_2,
     fontSize: Configs.FontSize.size14,
     marginTop: 5,
   },
   span: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.BLUE,
     fontSize: Configs.FontSize.size14,
     marginTop: 5,
   },
   a: {
-    ...Styles.typography.medium,
+    // ...Styles.typography.medium,
     color: COLORS.BLUE,
     fontSize: Configs.FontSize.size14,
     marginTop: 5,
