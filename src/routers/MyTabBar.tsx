@@ -5,7 +5,8 @@ import { Configs, PADDING_BOTTOM } from '@/commons/Configs';
 import Languages from '@/commons/Languages';
 import ScreenNames from '@/commons/ScreenNames';
 import { Touchable } from '@/components';
-import { COLORS, Styles } from '@/theme';
+import { Styles } from '@/theme';
+import COLORS from "@/theme/colors";
 import HomeIc from '@/assets/images/ic_home_active.svg'
 import AccountIc from '@/assets/images/ic_account_active.svg'
 import { observer } from 'mobx-react';
@@ -43,8 +44,8 @@ export const MyTabBar = ({ state, navigation, descriptors }: any) => {
                 }, [index, isFocused, route.key, route.name]);
 
                 const color = isFocused
-                    ? { color: COLORS.GREEN }
-                    : { color: COLORS.GRAY_6 };
+                    ? { color: COLORS.semantic.green.G800 }
+                    : { color: COLORS.neutral.black.B800};
 
                 return (
                     <Touchable onPress={onPress} style={styles.tab} key={route.key}>
@@ -98,14 +99,13 @@ export default MyBottomTabs
 
 const styles = StyleSheet.create({
     tabContainer: {
-        ...Styles.shadow,
         flexDirection: 'row',
         paddingBottom: PADDING_BOTTOM,
-        backgroundColor: COLORS.WHITE,
+        backgroundColor: COLORS.neutral.white.W900,
         alignItems: 'center',
         justifyContent: 'center',
         borderTopWidth: 1,
-        borderTopColor: COLORS.GRAY_5,
+        borderTopColor: COLORS.semantic.green.G800,
     },
     tab: {
         flex: 1,
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
         padding: 4
     },
     tabLabel: {
-        ...Styles.typography.medium,
+        ...Styles.typography.heading.h6_medium,
         fontSize: Configs.FontSize.size12
     }
 });

@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { Configs, PADDING_TOP, STATUSBAR_HEIGHT } from '@/commons/Configs';
 import Navigator from '@/routers/Navigator';
-import { COLORS, Styles } from '@/theme';
 import { SCREEN_WIDTH } from '@/utils/DimensionUtils';
 import { Touchable } from '../elements/touchable';
 import { HeaderProps } from './types';
+import COLORS from "@/theme/colors";
 
 
 const IMG_HEADER_HEIGHT = SCREEN_WIDTH / 375 * 85;
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         top: 0,
         right: 0,
         left: 0,
-        backgroundColor: COLORS.GREEN
+        backgroundColor: COLORS.semantic.green.G900
     },
     headerContainer: {
         flex: 1,
@@ -97,9 +97,8 @@ const styles = StyleSheet.create({
         right: 30
     },
     titleCenter: {
-        ...Styles.typography.medium,
         fontSize: Configs.FontSize.size16,
         textAlign: 'center',
-        color: COLORS.WHITE
+        color: COLORS.neutral.white.W900
     }
 });

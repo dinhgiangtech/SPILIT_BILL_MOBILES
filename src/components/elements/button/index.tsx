@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import { TextStyle, Text } from 'react-native';
 
 import { Configs } from '@/commons/Configs';
-import { COLORS } from '@/theme';
+import COLORS from "@/theme/colors";
 import { Touchable } from '../touchable';
 import { BUTTON_STYLES } from './constants';
 import { useStyleButton } from './styles';
@@ -62,29 +62,19 @@ export const Button = ({
 
     const getTextColor = useMemo(() => {
         if (disabled) {
-            return COLORS.LIGHT_GRAY;
+            return COLORS.neutral.white.W400;
         }
 
         let color;
         switch (buttonStyle) {
             case BUTTON_STYLES.GREEN:
-                color = COLORS.WHITE;
-                break;
-            case BUTTON_STYLES.BLUE:
-                color = COLORS.WHITE;
+                color = COLORS.semantic.green.G800;
                 break;
             case BUTTON_STYLES.WHITE:
-                color = COLORS.LIGHT_GRAY;
+                color = COLORS.neutral.white.W400;
                 break;
-            case BUTTON_STYLES.BLUE_1:
-                color = COLORS.GREEN_1;
-                break;
-            case BUTTON_STYLES.GREEN_1:
-                color = COLORS.WHITE;
-                break;
-            case BUTTON_STYLES.GRAY:
             default:
-                color = COLORS.LIGHT_GRAY;
+                color = COLORS.neutral.white.W900;
                 break;
         }
         return textColor || color;

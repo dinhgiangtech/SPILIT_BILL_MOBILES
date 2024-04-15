@@ -1,5 +1,5 @@
 import { NetworkProvider } from '@/providers/network-provider';
-import { COLORS } from '@/theme';
+import COLORS from "@/theme/colors";
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { AppStoreProvider } from '../providers/app-provider';
@@ -11,7 +11,7 @@ const MyTheme = {
     ...DefaultTheme,
     colors: {
         ...DefaultTheme.colors,
-        background: COLORS.WHITE
+        background: COLORS.neutral.white.W400
     }
 };
 

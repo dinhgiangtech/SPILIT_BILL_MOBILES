@@ -4,7 +4,8 @@ import Modal from 'react-native-modal';
 
 import { Configs } from '@/commons/Configs';
 import Languages from '@/commons/Languages';
-import { COLORS, Styles } from '@/theme';
+import { Styles } from '@/theme';
+import COLORS from "@/theme/colors";
 import { PopupActions, PopupProps } from './types';
 
 const PopupNoInternet = forwardRef<PopupActions, PopupProps>(
@@ -50,8 +51,8 @@ export default PopupNoInternet;
 
 const styles = StyleSheet.create({
     popup: {
-        backgroundColor: COLORS.WHITE,
-        borderColor: COLORS.TRANSPARENT,
+        backgroundColor: COLORS.neutral.white.W400,
+        //borderColor: COLORS.TRANSPARENT,
         borderRadius: 6,
         borderWidth: 1,
         paddingBottom: 10,
@@ -65,14 +66,14 @@ const styles = StyleSheet.create({
         height: Configs.IconSize.size39
     },
     txtTitle: {
-        ...Styles.typography.medium,
+        ...Styles.typography.heading.h6_medium,
         fontSize: Configs.FontSize.size16,
-        color: COLORS.BLACK,
+        color: COLORS.neutral.black.B800,
         textAlign: 'center',
         marginTop: 20
     },
     txtContent: {
-        ...Styles.typography.regular,
+        //...Styles.typography.regular,
         marginVertical: 10,
         marginHorizontal: 10,
         textAlign: 'center'

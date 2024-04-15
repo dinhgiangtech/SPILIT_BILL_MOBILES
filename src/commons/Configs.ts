@@ -95,6 +95,9 @@ export const Configs = {
     size120: 120,
     size144: 144,
   },
+  LineHeight: {
+    size24_5: 24.5,
+  }
 };
 
 export const TOP_HEIGHT = Platform.select({

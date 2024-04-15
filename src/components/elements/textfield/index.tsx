@@ -11,7 +11,7 @@ import { Animated, Text, TextInput, TextStyle, View } from 'react-native';
 
 import { IconTienngay } from '@/assets/icons/icon-tienngay';
 import { isIOS } from '@/commons/Configs';
-import { COLORS } from '@/theme';
+import COLORS from "@/theme/colors";
 import Validate from '@/utils/Validate';
 import { Touchable } from '../touchable';
 import { myTextFieldStyle } from './styles';
