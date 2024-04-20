@@ -4,6 +4,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 import ScreenNames from '../commons/ScreenNames';
 import MyBottomTabs from './MyTabBar';
+import {StyleSheet} from "react-native";
 
 
 const screenOptions = { headerShown: false };
@@ -21,8 +22,14 @@ const HomeStack = () => {
 
 const RootStack = observer(() => {
     return(
-        <MyBottomTabs/>
+      <MyBottomTabs/>
     )
 });
+
+const styles = StyleSheet.create({
+    TabBottom: {
+
+    }
+})
 
 export default RootStack;

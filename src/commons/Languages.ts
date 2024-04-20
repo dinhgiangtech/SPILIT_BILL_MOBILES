@@ -5,11 +5,13 @@ const Languages = {
         contracts: 'Danh sách hợp đồng',
         loan: 'Đăng ký khoản vay',
         history: 'Lịch sử giao dịch',
-        account: 'Tài khoản'
+        account: 'Tài khoản',
+        search: 'Tìm kiếm',
+        avatar: 'avatar'
     },
     noInternet:{
         desNoInternet:'Kết nối bị gián đoạn, vui lòng thử lại!'
     }
-    
+
 };
 export default Languages;

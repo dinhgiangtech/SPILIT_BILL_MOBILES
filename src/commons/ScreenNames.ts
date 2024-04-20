@@ -5,7 +5,10 @@ const ScreenNames = {
     auth: 'Auth',
     home: 'Home',
     contracts: 'Contracts',
-    account:'Account'
+    account:'Account',
+    search: "Search",
+    notification: "Notification",
+    avatar: "Avatar"
 };
 
 export const TabNamesArray = ['HomeTab', 'ContractsTab', 'LoanTab', 'HistoryTab', 'AccountTab'];
