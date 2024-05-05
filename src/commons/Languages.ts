@@ -1,11 +1,11 @@
 const Languages = {
     tabs: {
         home: 'Trang chủ',
+        group: 'Nhóm',
         notify: 'Thông báo',
-        contracts: 'Danh sách hợp đồng',
-        loan: 'Đăng ký khoản vay',
-        history: 'Lịch sử giao dịch',
-        account: 'Tài khoản'
+        account: 'Tài khoản',
+        scan:"Quyét",
+        setting:"Cài đặt"
     },
     noInternet:{
         desNoInternet:'Kết nối bị gián đoạn, vui lòng thử lại!'

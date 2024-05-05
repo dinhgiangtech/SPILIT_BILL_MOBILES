@@ -4,15 +4,15 @@ import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import StarIc from '@/assets/icons/star.svg';
 
-const HomeScreen = observer(() => {
+const NotificationScreen = observer(() => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text style={styles.txtTitle}>HomeScreen</Text>
+      <Text style={styles.txtTitle}>NotificationScreen</Text>
     </View>
   );
 });
 
-export default HomeScreen;
+export default NotificationScreen;
 
 const styles = StyleSheet.create({
   txtTitle: {
